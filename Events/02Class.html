@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="aman"> React</h1>
+        <button id="btn">Stop</button>
+    </div>
+</body>
+<script>
+   
+ 
+    // function Aman() {
+    //    document.querySelector("#aman").innerHTML = "Aman Singh Rajput"  
+    // }
+
+    const time =  setTimeout(() =>{
+        document.querySelector("#aman").innerHTML = " Aman Singh Rajput"
+    } , 2000)
+
+    // const stop =  document.querySelector("#btn")
+
+    document.querySelector("#btn").addEventListener("click" , ()=> {
+        clearTimeout(time)
+        console.log("Stopped");
+        
+    })
+
+</script>
+</html>

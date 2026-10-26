@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+    }
+    #cont{
+        text-align: center;
+        color: azure;
+    }
+</style>
+<body>
+    <div id="cont">
+        <h1 id="name">i am topper Aman Singh Rajput</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stopped</button>
+    </div>
+</body>
+<script>
+
+   
+    const time =  document.querySelector("#start").addEventListener("click", (e)=>{
+        setTimeout(()=>{
+            document.querySelector("#name").innerHTML  = "hello sir my name is Aman Singh, i am belongs to bihar ,but many year staying in surat."
+        },2000)
+    })
+
+    document.querySelector("stop").addEventListener("click" , (e) =>{
+        clearTimeout(time)
+    })
+
+
+</script>
+</html>

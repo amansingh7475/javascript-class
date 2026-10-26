@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//     let user = prompt("Enter the values :-");
+//     let reverse = ""
+
+//         for (const i of user) {
+//             reverse = i+reverse
+//         }
+// console.log(reverse);
+
+// let str = prompt("Enter the value:-")
+// let reversed = str.split("").reverse().join("");
+// console.log(reversed);
+// if (str == reversed) {
+//     console.log("Yes This Is Palindrome");
+// } else {
+//     console.log("No This Is NOT Palindrome");
+// }
+
+// let user = ""
+// let reverse = ""
+// for (const i of user) {
+//     reverse = i+reverse
+// }
+// console.log(reverse);
+
+
+// let name = prompt("Enter the value :-")
+
+// let reverse = name.split("").reverse().join("")
+// console.log(reverse);
+
+
+// if (name===reverse) {
+//     console.log("Yes This Is Palindrome");
+    
+// }else{
+//     console.log("No is Not Palindrome");
+    
+// }
+
+
+// let arr2 = [1,2,3,4,5,6,78,9,985,]
+// let minimum = Math.min(...arr2)
+// console.log(minimum);
+
+// let arr3 = [85,6,4,9,6,2,895,7444,2,6666,55332,56]
+
+// let newOne = Math.max(...arr3)
+// console.log(newOne);
+
+
+let user = []
+
+const newOne = (name) =>{
+    user.push(name)
+}
+
+newOne("Aman")
+
+console.log(user);
+
+
+
+
+</script>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="class1">
+        <div class="class2">
+            <div class="class3">
+                Event Delegation
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('class1').addEventListener('click', () => {
+        console.log(`Child Clicked`);
+    },false)
+    document.getElementById('class2').addEventListener('click', () => {
+        console.log(`Parent Clicked`);
+    },false)
+    document.getElementById('class2').addEventListener('click', () => {
+        console.log(`GrandParent Clicked`);
+    },false)
+</script>
+</html>

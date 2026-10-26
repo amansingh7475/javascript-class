@@ -1,0 +1,30 @@
+ html {
+        margin:  0;
+    }
+    span {
+        display: block;
+    }
+    .id{
+        margin: 100px auto 100px;
+        width: 100%;
+        text-align: center;
+        padding: auto;
+    } 
+    .button{
+        height: 100px;
+        width: 100px;
+        border: solid black 2px;
+        display: inline-block;
+    }
+    #pink{
+        background: pink;
+    }
+    #red{
+        background: red;
+    }
+    #yellow{
+        background: yellow;
+    }
+    #green{
+        background: green;
+    }

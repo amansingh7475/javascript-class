@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        text-align: center;
+    }
+    h1{
+        color: aquamarine;
+    }
+    
+</style>
+<body>
+    <h1>Todo List</h1>
+    <br>
+    <form>
+        <div class="class">
+            <input type="text" id="inputValue">
+            <button class="btn">Add todo</button>
+        </div>
+        <section class="todo-lists-elem"></section>
+    </form>
+</body>
+<script>
+    const mainTodoElem = document.querySelector(".todo-lists-elem")
+    const inputValue = document.getElementById("text")
+
+    const addTodoList = (e)=>{
+        e.preventDefault();
+        console.log(testing);
+        
+    } 
+
+    document.querySelector(".btn").addEventListener("click",(e)=>{
+        addTodoList(e);
+    })
+</script>
+</html>

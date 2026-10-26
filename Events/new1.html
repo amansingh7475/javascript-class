@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 id="hii">I am Aman Singh</h1>
+            <button class="btn"> Submit</button>
+
+          
+        </div>
+    </div>
+
+    
+    
+</body>
+<script>
+
+    function name() {
+        let  change = document.getElementById('hii').innerText = "Aman Singh Topper"
+       
+    }
+
+    document.querySelector("#hii").addEventListener("mouseover" , name )
+
+    document.querySelector('.btn').addEventListener("click" , ()=>{
+        document.querySelector("#hii").innerHTML = " <b> Rajput Aman Singh </b>"
+    })
+</script>
+</html>

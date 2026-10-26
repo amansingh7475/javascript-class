@@ -1,0 +1,5 @@
+There are four types of functions in JavaScript
+ 1. without return type without argument
+ 2. without return type with argument
+ 3. with return type without argument
+ 4. with return type with argument

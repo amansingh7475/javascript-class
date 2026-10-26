@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button id="btn">Add</button>
+    <h1 align="center">Event Handler</h1>
+    <div id="cut">
+        <li><img src="https://images.goway.com/production/styles/visual_media_content_3xl/s3/imported/zermatt_valley_and_matterhorn_peak_1.jpg.webp?VersionId=zdUneeRLBBh7FmOW5zqcG6omKA9.XS1m&itok=ADrU18hd" id="img" class="img2" alt="" width="300px" height="300px" title="switzerland"></li>
+        <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+        <li><button class="btn" id="btn2">submit</button></li>
+       
+    </div>
+</body>
+<script> 
+    // let btn1 = document.getElementById('img')
+    // btn.onclick = () =>{
+    //     console.log("hello aman");
+        
+    // }
+    // let button = document.getElementById('btn2')
+    // button.onclick = () => alert('program')
+    
+    // let btn = document.querySelector('#btn2')
+    // btn.onclick = (e) => {
+    //     console.log(e);
+    //     console.log(e.target);
+    //     console.log(e.type);
+    //     console.log(e.clientX , e.clientY );
+    // }
+
+    // let img = document.getElementById('img')
+    // img.onmouseover = (e) => {
+    //     console.log("hello aman");
+    //     alert('hello world')
+        
+    // }
+
+
+    // let btn = document.querySelector('#btn2')
+    
+    // btn.addEventListener("click" , (e) => {
+    //     console.log("hello world");
+    //     console.log(e);
+    //     console.log(e.target);
+    //     console.log(e.type);
+    //     console.log(e.timeStamp);       
+    // })
+
+    // btn.removeEventListener("click" , btn)
+
+    // document.querySelector('#cut').addEventListener("click" , (e) => {
+        
+    //         let removeIt = e.target
+    //         removeIt.remove(); 
+        
+    // })
+
+    // let current = "light"
+    // let btn = document.querySelector('#btn')
+
+    // btn.addEventListener("click" , () => {
+    //     if (current === "light") {
+    //         current = "dark"
+    //         document.querySelector('#body').style.backgroundColor = "dark"
+    //     }else{
+    //         current = "light"
+    //         document.querySelector('#body').style.backgroundColor = "light"
+    //     }
+    //     console.log(current);
+        
+    // })
+
+    document.querySelector("#cut").addEventListener("click" , (e) =>{
+        let table = e.target
+        table.remove()
+    })
+    
+</script>
+</html>

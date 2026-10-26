@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculator{
+        padding: 10px;
+        background-color: rgb(172, 172, 244);
+    }
+    .container form input{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 2px;
+        background: transparent;
+        box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.7),20px 20px 40px rgba(0, 0, 0, 0.8);
+    }
+    .display {
+        display: flex;
+        justify-content: center; 
+
+    }
+    form .display input{
+        flex: 1px;
+        background-color: rgb(148, 150, 152);
+    }
+    form input.equal{
+        width: 110px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="aman">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="aman.value =''">
+                    <input type="button" value="DEL" onclick="aman.value = aman.value.slice(0,-1)">
+                    <input type="button" value="." onclick="aman.value +='.'">
+                    <input type="button" value="/" onclick="aman.value +='/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="aman.value +='7'">
+                    <input type="button" value="8" onclick="aman.value +='8'">
+                    <input type="button" value="9" onclick="aman.value +='9'">
+                    <input type="button" value="*" onclick="aman.value +='*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="aman.value +='4'">
+                    <input type="button" value="5" onclick="aman.value +='5'">
+                    <input type="button" value="6" onclick="aman.value +='6'">
+                    <input type="button" value="-" onclick="aman.value +='-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="aman.value +='1'">
+                    <input type="button" value="2" onclick="aman.value +='2'">
+                    <input type="button" value="3" onclick="aman.value +='3'">
+                    <input type="button" value="+" onclick="aman.value +='+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="aman.value +='00'">
+                    <input type="button" value="0" onclick="aman.value +='0'">
+                    <input type="button" value="=" onclick="aman.value = eval(aman.value)" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
